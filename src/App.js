@@ -20,7 +20,7 @@ const App = {
                 let row = Table.createRow(e);
     
                 row.addEventListener("click", () => {
-                    this.updateRow(Data.get().indexOf(e));
+                    //this.updateRow(Data.get().indexOf(e));
                 })
     
                 Table.loadRow(row);

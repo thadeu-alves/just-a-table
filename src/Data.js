@@ -30,22 +30,158 @@ const Data = {
     }
 }
 
-const DB = JSON.parse(localStorage.getItem("data")).length > 0 ? JSON.parse(localStorage.getItem("data")) : [
-    { name: "Thadeu", work: "Programador", city: "Serra Grande" },
-    { name: "Carlos", work: "Designer", city: "João Pessoa" },
-    { name: "Ana", work: "Engenheira", city: "Campina Grande" },
-    { name: "Mariana", work: "Professora", city: "Recife" },
-    { name: "Bruno", work: "Médico", city: "Natal" },
-    { name: "Fernanda", work: "Advogada", city: "Fortaleza" },
-    { name: "Ricardo", work: "Empresário", city: "São Paulo" },
-    { name: "Juliana", work: "Jornalista", city: "Rio de Janeiro" },
-    { name: "Lucas", work: "Engenheiro", city: "Belo Horizonte" },
-    { name: "Camila", work: "Arquiteta", city: "Curitiba" },
-    { name: "Diego", work: "Analista de Sistemas", city: "Brasília" },
-    { name: "Letícia", work: "Médica", city: "Salvador" },
-    { name: "Gabriel", work: "Fotógrafo", city: "Porto Alegre" },
-    { name: "Amanda", work: "Psicóloga", city: "Florianópolis" },
-    { name: "Pedro", work: "Cientista de Dados", city: "Goiânia" }
+
+const DB = JSON.parse(localStorage.getItem("data"))?.length > 0 ? JSON.parse(localStorage.getItem("data")) : [
+    {
+        "profile": {
+            "name": "Thadeu",
+            "email": "thadeu@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "development",
+        "tags": ["tech", "leader", "sentimental"],
+        "workPercentual": 90
+    },
+    {
+        "profile": {
+            "name": "Carlos",
+            "email": "carlos@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "design",
+        "tags": ["creative", "visual", "innovative"],
+        "workPercentual": 75
+    },
+    {
+        "profile": {
+            "name": "Ana",
+            "email": "ana@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "engineering",
+        "tags": ["logical", "problem-solver", "analytical"],
+        "workPercentual": 85
+    },
+    {
+        "profile": {
+            "name": "Mariana",
+            "email": "mariana@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "education",
+        "tags": ["patient", "dedicated", "mentor"],
+        "workPercentual": 80
+    },
+    {
+        "profile": {
+            "name": "Bruno",
+            "email": "bruno@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "medicine",
+        "tags": ["caring", "precise", "dedicated"],
+        "workPercentual": 95
+    },
+    {
+        "profile": {
+            "name": "Fernanda",
+            "email": "fernanda@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "law",
+        "tags": ["persuasive", "analytical", "strategic"],
+        "workPercentual": 88
+    },
+    {
+        "profile": {
+            "name": "Ricardo",
+            "email": "ricardo@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "business",
+        "tags": ["entrepreneur", "visionary", "risk-taker"],
+        "workPercentual": 92
+    },
+    {
+        "profile": {
+            "name": "Juliana",
+            "email": "juliana@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "journalism",
+        "tags": ["curious", "communicative", "investigative"],
+        "workPercentual": 78
+    },
+    {
+        "profile": {
+            "name": "Lucas",
+            "email": "lucas@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "engineering",
+        "tags": ["technical", "solution-oriented", "logical"],
+        "workPercentual": 86
+    },
+    {
+        "profile": {
+            "name": "Camila",
+            "email": "camila@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "architecture",
+        "tags": ["creative", "aesthetic", "planner"],
+        "workPercentual": 83
+    },
+    {
+        "profile": {
+            "name": "Diego",
+            "email": "diego@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "technology",
+        "tags": ["problem-solver", "tech-savvy", "analytical"],
+        "workPercentual": 87
+    },
+    {
+        "profile": {
+            "name": "Letícia",
+            "email": "leticia@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "medicine",
+        "tags": ["compassionate", "dedicated", "precise"],
+        "workPercentual": 94
+    },
+    {
+        "profile": {
+            "name": "Gabriel",
+            "email": "gabriel@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "photography",
+        "tags": ["artistic", "creative", "observant"],
+        "workPercentual": 76
+    },
+    {
+        "profile": {
+            "name": "Amanda",
+            "email": "amanda@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "psychology",
+        "tags": ["empathetic", "thoughtful", "analytical"],
+        "workPercentual": 89
+    },
+    {
+        "profile": {
+            "name": "Pedro",
+            "email": "pedro@gmail.com",
+            "imgUrl": "profile.png"
+        },
+        "area": "data science",
+        "tags": ["analytical", "logical", "data-driven"],
+        "workPercentual": 91
+    }
 ];
 
 export {Data, DB}
